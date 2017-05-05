@@ -29,7 +29,7 @@
 #logoCircle {
     width:100px;
     height: 100px;
-    display: table;
+    /*display: table;*/
     border-radius: 50%;
     border: 10px solid #337ab7;
     background-color: #fff;
@@ -40,12 +40,17 @@
     font-family: 'Lobster', cursive;
     font-size: 5em;
     margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    margin-left: -60px;
+    z-index: 1;
 }
 
 #menuClick{
     margin: 0 auto;
     text-align: center;
     color: #a0a0a0;
+    padding-top: 120px;
 }
 
 #menuContainer {
@@ -68,12 +73,6 @@
     padding: 10px 10px 5px 10px;
 }
 
-.active {
-    border-bottom: 2px solid #a0a0a0;
-    border-radius: 60%;
-    color: #a0a0a0;
-}
-
 #contactBtn {
     position: absolute;
     -webkit-transform: rotate(44deg); /* Safari and Chrome */
@@ -90,11 +89,6 @@
     -ms-transform: rotate(22deg);   /* IE 9 */
     -o-transform: rotate(22deg);   /* Opera */
     transform: rotate(22deg);
-}
-
-#homeBtn {
-    position: absolute;
-
 }
 
 #portfolioBtn {
@@ -165,7 +159,7 @@
 #aboutSec {
     width: 85%;
     max-width: 1280px;
-    height: 450px;
+    height: 650px;
     margin: 0 auto;
     padding: 50px 0;
     position: relative;
@@ -190,6 +184,17 @@
     vertical-align: top;
     margin: 0 auto;
     position: absolute;
+}
+#skillSec {
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+
+.skillImg {
+    width: 20%;
+    display: inline-block;
+    padding-top: 150px;
 }
 
 #blogBack {

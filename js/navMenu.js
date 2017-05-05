@@ -32,6 +32,7 @@ $(document).ready(function () {
                     right: "0"
                 }, 1000);
                 $("#aboutInfo").slideDown(1500);
+                $("#skillSec").slideDown(1500);
                 $("#aboutInfo").css("display", "inline-block");
             }
         });
@@ -65,7 +66,7 @@ $(document).ready(function () {
 
     // click event to animate menu into view
     $("#logoCircle, #menuClick").click(function () {
-        $("#menuContainer").fadeToggle(3000);
+        $("#menuContainer").fadeIn(3000);
         $("#menuClick").css("visibility", "hidden");
         $("#contactBtn").animate({
             top: "415px",
@@ -75,9 +76,8 @@ $(document).ready(function () {
             top: "483px",
             right: "370px"
         }, 1000);
-        $("#homeBtn").animate({
-            top: "505px",
-            right: "245px"
+        $("#logoCircle").animate({
+            top: "180px"
         }, 1000);
         $("#portfolioBtn").animate({
             top: "483px",
@@ -95,7 +95,7 @@ $(document).ready(function () {
             }, function () {
                 $(this).stop(true, false).animate({"font-size": "1em"});
             });
-        }, 2000);
+            }, 2000);
 
     });
 
