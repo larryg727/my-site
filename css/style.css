@@ -152,10 +152,6 @@
     opacity: .6;
 }
 
-/*.unactiveSec:hover:after {*/
-    /*opacity: 0;*/
-/*}*/
-
 #aboutSec {
     width: 85%;
     max-width: 1280px;
@@ -172,10 +168,11 @@
     display: none;
 }
 
-#aboutInfo>h1 {
+section h1 {
     font-size: 4em;
     color: #337ab7;
     font-family: 'Lobster', cursive;
+    text-align: center;
 }
 
 #aboutPic {
@@ -215,12 +212,6 @@
     text-align: center;
 }
 
-#blog>h1 {
-    font-size: 4em;
-    color: #337ab7;
-    font-family: 'Lobster', cursive;
-}
-
 #blogInfo {
     width: 15%;
     display: inline-block;
@@ -247,7 +238,6 @@
 }
 
 #portBack {
-    /*background-color: #a0a0a0;*/
     padding: 5px 0;
     background:
             linear-gradient(
@@ -260,11 +250,67 @@
 
 }
 
-#portBack>h1 {
-    font-size: 4em;
-    color: #337ab7;
-    font-family: 'Lobster', cursive;
+#contactSec {
+    width: 85%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+#contactInfo {
+    width: 65%;
+    vertical-align: top;
+    margin: 0 auto;
     text-align: center;
+}
+
+.icons {
+    display: inline-block;
+    width: 20%;
+    margin: 0;
+    padding: 0 6%
+}
+
+h5 {
+    text-align: center;
+    font-size: .75em;
+    word-wrap: break-word;
+}
+
+#formContainer {
+    width: 70%;
+}
+
+form {
+    margin: 40px auto 0 auto;
+    display: table;
+}
+
+form p {
+    display: table-row;
+}
+
+label {
+    display: table-cell;
+    font-size: 1.4em;
+}
+
+input {
+    display: table-cell;
+    /*width: 100%;*/
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid black;
+}
+
+textarea {
+    width: 100%;
+    height: 130px;
+    margin-top: 40px;
+}
+
+#infoLabel{
+    vertical-align: top;
+    padding-top: 40px;
 }
 
 footer {

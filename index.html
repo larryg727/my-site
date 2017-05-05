@@ -23,13 +23,17 @@
 
     <div id="menuContainer">
         <a href="#contactSec">
-        <div class="menuBtn" id="contactBtn">Contact</div></a>
+            <div class="menuBtn" id="contactBtn">Contact</div>
+        </a>
         <a href="#aboutSec">
-        <div class="menuBtn" id="aboutBtn">About Me</div></a>
+            <div class="menuBtn" id="aboutBtn">About Me</div>
+        </a>
         <a href="#portBack">
-        <div class="menuBtn" id="portfolioBtn">Portfolio</div></a>
+            <div class="menuBtn" id="portfolioBtn">Portfolio</div>
+        </a>
         <a href="#blogBack">
-        <div class="menuBtn" id="blogBtn">Blog</div></a>
+            <div class="menuBtn" id="blogBtn">Blog</div>
+        </a>
     </div>
 
     <div id="welcomeContainer">
@@ -53,17 +57,17 @@
         </div>
         <div id="skillSec">
             <div class="skillImg">
-            <img src="img/html5-340x340.png" alt="">
+                <img src="img/html5-340x340.png" alt="">
             </div>
             <div class="skillImg">
-            <img src="img/css3-340x340.png" alt="">
-                </div>
+                <img src="img/css3-340x340.png" alt="">
+            </div>
             <div class="skillImg">
-            <img src="img/JavaScript-340x340.png" alt="">
-                </div>
+                <img src="img/JavaScript-340x340.png" alt="">
+            </div>
             <div class="skillImg">
-            <img src="img/jquery-340x340.png" alt="">
-                </div>
+                <img src="img/jquery-340x340.png" alt="">
+            </div>
         </div>
     </div>
 
@@ -101,6 +105,79 @@
         <div id="blogInfo">
             <h2>Blog entries</h2>
         </div>
+    </div>
+
+</section>
+
+<section class="unactiveSec" id="contactBack">
+
+    <div id="contactSec">
+        <h1>Contact Me</h1>
+
+        <div id="contactInfo">
+            <h3>Please feel free to reach out and contact me with any questions or inquiries. I would love to hear from
+                you.</h3>
+
+            <div class="row iconCntnr">
+                <div class="icons">
+                    <a href="https://www.linkedin.com/in/larry-gonzales-dev" target="_blank">
+                        <img src="img/social_linkedin_box_blue.png" alt="linked in">
+                        <h5>linkedin.com/in/larry-gonzales-dev</h5>
+                    </a>
+
+                </div>
+                <div class="icons">
+                    <a href="https://www.facebook.com/larry.gonzales.dev" target="_blank">
+                        <img src="img/social_facebook_box_blue.png" alt="facebook">
+                        <h5>facebook.com/larry.gonzales.dev</h5>
+                    </a>
+                </div>
+                <div class="icons">
+                    <a href="https://twitter.com/larryg_dev" target="_blank">
+                        <img src="img/social_twitter_box_blue.png" alt="twitter">
+                        <h5>twitter.com/larryg_dev</h5>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="formContainer">
+            <form action="idkyet" method="post">
+                <p>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+                </p>
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email">
+                </p>
+                <p>
+                    <label for="phone">Phone number:</label>
+                    <input type="number" id="phone" name="phone">
+                </p>
+                <p>
+                    <label for="other">Other ways to reach you:</label>
+                    <input type="text" id="other" name="other">
+
+                    <select name="otherType" id="otherType">
+                        <option value="default" selected>-Specify if entered-</option>
+                        <option value="fB">FaceBook</option>
+                        <option value="twitter">Twitter</option>
+                        <option value="skype">Skype</option>
+                        <option value="facetime">Facetime</option>
+                        <option value="hangouts">Google Hangouts</option>
+                        <option value="other">Other-specify in comments</option>
+                    </select>
+                </p>
+                <p>
+                    <label id="infoLabel" for="info">Questions, Comments,<br>Inquiries, Ideas:</label>
+
+                    <textarea id="info" name="info"></textarea>
+                </p>
+                <button type="submit" id="formSubmit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+
     </div>
 
 </section>

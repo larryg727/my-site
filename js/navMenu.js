@@ -18,7 +18,7 @@ $(document).ready(function () {
         //the end of the visible area in the page, starting from the scroll position
         var visibleArea = win.scrollTop() + win.height();
         //the end of the object to check
-        var objEndPos = (obj.offset().top + obj.outerHeight());
+        var objEndPos = (obj.offset().top + obj.outerHeight()) - 100;
         return (visibleArea >= objEndPos && scrollPosition <= objEndPos ? true : false)
     };
 
@@ -51,6 +51,14 @@ $(document).ready(function () {
         section = "#blogBack";
         if ($("#blogBack").inView()) {
             $("#blogBack").removeClass("unactiveSec");
+
+        }
+    });
+
+    $(window).scroll(function () {
+        section = "#contactBack";
+        if ($("#contactBack").inView()) {
+            $("#contactBack").removeClass("unactiveSec");
 
         }
     });
