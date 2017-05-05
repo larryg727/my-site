@@ -27,6 +27,7 @@ $(document).ready(function () {
         $(window).scroll(function () {
             section = "#aboutSec";
             if ($("#aboutSec").inView()) {
+                $("#aboutSec").parent().removeClass("unactiveSec");
                 $("#aboutPic").animate({
                     right: "0"
                 }, 1000);
@@ -35,6 +36,23 @@ $(document).ready(function () {
             }
         });
     }
+
+    // scroll funtions to remove dark overlay on sections when scroll
+    $(window).scroll(function () {
+        section = "#portBack";
+        if ($("#portBack").inView()) {
+            $("#portBack").removeClass("unactiveSec");
+
+        }
+    });
+
+    $(window).scroll(function () {
+        section = "#blogBack";
+        if ($("#blogBack").inView()) {
+            $("#blogBack").removeClass("unactiveSec");
+
+        }
+    });
 
     // initialize slider
     $(".portfolioSlider").slick({

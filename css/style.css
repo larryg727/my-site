@@ -138,6 +138,30 @@
     font-size: 2em;
 }
 
+.unactiveSec {
+    position: relative;
+}
+
+.unactiveSec:after {
+    background:
+            linear-gradient(
+                    rgba(0, 0, 0, 1),
+                    rgba(0, 0, 0, 1)
+            );
+    z-index: 3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+    opacity: .6;
+}
+
+/*.unactiveSec:hover:after {*/
+    /*opacity: 0;*/
+/*}*/
+
 #aboutSec {
     width: 85%;
     max-width: 1280px;
