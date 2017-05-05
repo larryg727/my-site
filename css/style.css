@@ -58,35 +58,55 @@
     top: -325px;
     left: 50%;
     margin-left: -350px;
+    display: none;
 }
 
 .menuBtn {
     color: #ffffff;
-    background-color: #337ab7;
-    border-radius: 5%;
     text-align: center;
     width: 90px;
     padding: 10px;
 }
 
-#homeBtn {
+#contactBtn {
     position: absolute;
+    -webkit-transform: rotate(44deg); /* Safari and Chrome */
+    -moz-transform: rotate(44deg);   /* Firefox */
+    -ms-transform: rotate(44deg);   /* IE 9 */
+    -o-transform: rotate(44deg);   /* Opera */
+    transform: rotate(44deg);
 }
 
 #aboutBtn {
     position: absolute;
+    -webkit-transform: rotate(22deg); /* Safari and Chrome */
+    -moz-transform: rotate(22deg);   /* Firefox */
+    -ms-transform: rotate(22deg);   /* IE 9 */
+    -o-transform: rotate(22deg);   /* Opera */
+    transform: rotate(22deg);
+}
+
+#homeBtn {
+    position: absolute;
+
 }
 
 #portfolioBtn {
     position: absolute;
+    -webkit-transform: rotate(-20deg); /* Safari and Chrome */
+    -moz-transform: rotate(-20deg);   /* Firefox */
+    -ms-transform: rotate(-20deg);   /* IE 9 */
+    -o-transform: rotate(-20deg);   /* Opera */
+    transform: rotate(-20deg);
 }
 
 #blogBtn {
     position: absolute;
-}
-
-#contactBtn {
-    position: absolute;
+    -webkit-transform: rotate(-45deg); /* Safari and Chrome */
+    -moz-transform: rotate(-45deg);   /* Firefox */
+    -ms-transform: rotate(-45deg);   /* IE 9 */
+    -o-transform: rotate(-45deg);   /* Opera */
+    transform: rotate(-45deg);
 }
 
 #welcomeContainer {
