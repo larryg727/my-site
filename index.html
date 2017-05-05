@@ -7,6 +7,8 @@
     <meta name="keywords" content="portfolio, resume, developer">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" href="slick/slick-theme.css">
     <title>Larry Gonzales</title>
 </head>
 <body>
@@ -20,9 +22,9 @@
     </div>
 
     <div id="menuContainer">
-        <div class="menuBtn" id="contactBtn">Contact Me</div>
+        <div class="menuBtn" id="contactBtn">Contact</div>
         <div class="menuBtn" id="aboutBtn">About Me</div>
-        <div class="menuBtn" id="homeBtn">Home</div>
+        <div class="menuBtn active" id="homeBtn">Home</div>
         <div class="menuBtn" id="portfolioBtn">Portfolio</div>
         <div class="menuBtn" id="blogBtn">Blog</div>
     </div>
@@ -35,10 +37,68 @@
     </div>
 </div>
 
+<section>
+
+    <div id="aboutSec">
+        <div id="aboutInfo">
+            <h1>About Me</h1>
+            <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem beatae deleniti dicta eaque eos et fugiat id illo illum in labore maiores, natus, neque odit perspiciatis quis quisquam repudiandae veniam?</span><span>Alias aliquid amet asperiores assumenda blanditiis corporis, dolorem error explicabo facere fugit laborum molestiae necessitatibus nihil nulla odit quasi, quia repellat suscipit tempora tempore tenetur totam voluptas voluptatem? Delectus, in?</span><span>Ab alias assumenda atque commodi dolor dolores earum eos excepturi expedita fugiat, illum inventore iste laboriosam laborum magni maiores odit placeat possimus quas quasi quod recusandae reiciendis sunt veritatis vero?</span>
+            </p>
+        </div>
+        <div id="aboutPic">
+            <img src="http://lorempixel.com/200/200" alt="">
+        </div>
+    </div>
+
+</section>
+
+<section id="blogBack">
+
+    <div id="blogSec">
+        <div id="blog">
+            <h1>Blog</h1>
+            <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem beatae deleniti dicta eaque eos et fugiat id illo illum in labore maiores, natus, neque odit perspiciatis quis quisquam repudiandae veniam?</span><span>Alias aliquid amet asperiores assumenda blanditiis corporis, dolorem error explicabo facere fugit laborum molestiae necessitatibus nihil nulla odit quasi, quia repellat suscipit tempora tempore tenetur totam voluptas voluptatem? Delectus, in?</span><span>Ab alias assumenda atque commodi dolor dolores earum eos excepturi expedita fugiat, illum inventore iste laboriosam laborum magni maiores odit placeat possimus quas quasi quod recusandae reiciendis sunt veritatis vero?</span>
+            </p>
+        </div>
+        <div id="blogInfo">
+            <h2>Blog entries</h2>
+        </div>
+    </div>
+
+</section>
+
+<section id="portBack">
+    <div class="portfolioSlider">
+        <div class="slick-slide">
+            <img src="img/simon-screensht.png" alt="">
+        <h2>Simple Simon</h2>
+        </div>
+        <div class="slick-slide">
+            <img src="img/weather-screensht.png" alt="">
+        <h2>Weather Application</h2>
+        </div>
+        <div class="slick-slide">
+            <img src="img/jsCalc-screensht.png" alt="">
+        <h2>Javascript Calculator</h2>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="resume.html">About Me</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+    </ul>
+    <p>&copy 2017 Larry Gonzales</p>
+
+</footer>
 <script
         src="https://code.jquery.com/jquery-2.2.4.min.js"
         integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
         crossorigin="anonymous" class="2 4"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
 <script src="js/navMenu.js"></script>
 </body>
 </html>

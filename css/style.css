@@ -65,7 +65,13 @@
     color: #ffffff;
     text-align: center;
     width: 90px;
-    padding: 10px;
+    padding: 10px 10px 5px 10px;
+}
+
+.active {
+    border-bottom: 2px solid #a0a0a0;
+    border-radius: 60%;
+    color: #a0a0a0;
 }
 
 #contactBtn {
@@ -130,4 +136,100 @@
 
 #welcomeContainer > h3 {
     font-size: 2em;
+}
+
+#aboutSec {
+    width: 85%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+#aboutInfo {
+    width: 45%;
+    display: inline-block;
+    padding: 0 35px;
+    text-align: center;
+}
+
+#aboutInfo>h1 {
+    font-size: 4em;
+    color: #337ab7;
+    font-family: 'Lobster', cursive;
+}
+
+#aboutPic {
+    width: 45%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#blogBack {
+    background-color: #cccccc;
+}
+
+#blogSec {
+    width: 85%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+#blog {
+    width: 65%;
+    display: inline-block;
+    padding: 0 35px;
+    text-align: center;
+}
+
+#blog>h1 {
+    font-size: 4em;
+    color: #337ab7;
+    font-family: 'Lobster', cursive;
+}
+
+#blogInfo {
+    width: 15%;
+    display: inline-block;
+    padding: 0 35px;
+    text-align: center;
+    vertical-align: top;
+}
+
+#blogInfo>h2 {
+    font-size: 2.5em;
+    color: #337ab7;
+    font-family: 'Lobster', cursive;
+}
+
+.portfolioSlider {
+    width: 60%;
+    margin: 100px auto;
+    display: inline-block;
+    color: #000;
+    font-size: 3em;
+
+}
+
+#portBack {
+    background-color: #a0a0a0;
+    padding: 50px 0;
+}
+
+footer {
+    height: 100px;
+    text-align: center;
+    margin-top: 100px;
+    width: 100%;
+}
+
+footer ul {
+    display: inline-block;
+}
+
+footer li {
+    list-style: none;
+    margin: 5px auto;
+    display: inline-block;
+    width: 100px
 }
