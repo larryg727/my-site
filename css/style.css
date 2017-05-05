@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster|Roboto');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+#headerContainer {
+    background:
+            linear-gradient(
+                    rgba(0, 0, 0, 0.85),
+                    rgba(0, 0, 0, 0.85)
+            ),
+            url("../img/code.jpg") no-repeat top center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 900px;
+    position: relative;
+}
+
+#logoCircle {
+    width:100px;
+    height: 100px;
+    display: table;
+    border-radius: 50%;
+    border: 10px solid #337ab7;
+    background-color: #fff;
+    color: #337ab7;
+    line-height: 100px;
+    text-align: center;
+    vertical-align: middle;
+    font-family: 'Lobster', cursive;
+    font-size: 5em;
+    margin: 0 auto;
+}
+
+#menuClick{
+    margin: 0 auto;
+    text-align: center;
+    color: #a0a0a0;
+}
+
+#menuContainer {
+    border: 50px solid #337ab7;
+    width: 600px;
+    height: 500px;
+    border-radius: 100%;
+    margin: 0 auto;
+    position: absolute;
+    top: -325px;
+    left: 50%;
+    margin-left: -350px;
+}
+
+.menuBtn {
+    color: #ffffff;
+    background-color: #337ab7;
+    border-radius: 5%;
+    text-align: center;
+    width: 90px;
+    padding: 10px;
+}
+
+#homeBtn {
+    position: absolute;
+}
+
+#aboutBtn {
+    position: absolute;
+}
+
+#portfolioBtn {
+    position: absolute;
+}
+
+#blogBtn {
+    position: absolute;
+}
+
+#contactBtn {
+    position: absolute;
+}
+
+#welcomeContainer {
+    color: #337ab7;
+    width: 60%;
+    max-width: 843px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 150px;
+}
+
+#welcomeContainer > h1 {
+    font-size: 5em;
+    font-family: 'Lobster', cursive;
+}
+
+#welcomeContainer > h2 {
+    font-size: 4em;
+    color: #a0a0a0;
+}
+
+#welcomeContainer > h3 {
+    font-size: 2em;
+}
