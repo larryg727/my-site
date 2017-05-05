@@ -15,8 +15,8 @@
 #headerContainer {
     background:
             linear-gradient(
-                    rgba(0, 0, 0, 0.85),
-                    rgba(0, 0, 0, 0.85)
+                    rgba(0, 0, 0, 0.8),
+                    rgba(0, 0, 0, 0.8)
             ),
             url("../img/code.jpg") no-repeat top center fixed;
     background-size: cover;
@@ -107,6 +107,26 @@
     -ms-transform: rotate(-45deg);   /* IE 9 */
     -o-transform: rotate(-45deg);   /* Opera */
     transform: rotate(-45deg);
+}
+
+/*---------mobile nav bar---------*/
+
+#mobileNav {
+    background-color: #337ab7;
+    width: 100%;
+    margin: 0 auto;
+    height: 50px;
+    text-align: center;
+    display:none;
+}
+
+.mobileNavBtn {
+    color: white;
+    display: inline-block;
+    list-style: none;
+    margin: 0 auto;
+    width: 100px;
+    padding: 15px;
 }
 
 #welcomeContainer {
@@ -241,8 +261,8 @@ section h1 {
     padding: 5px 0;
     background:
             linear-gradient(
-                    rgba(0, 0, 0, 0.85),
-                    rgba(0, 0, 0, 0.85)
+                    rgba(0, 0, 0, 0.8),
+                    rgba(0, 0, 0, 0.8)
             ),
             url("../img/close-code.jpg") no-repeat top center fixed;
     background-size: cover;
@@ -263,6 +283,11 @@ section h1 {
     text-align: center;
 }
 
+#iconContainer {
+    width: 100%;
+    margin: 40px auto;
+}
+
 .icons {
     display: inline-block;
     width: 20%;
@@ -277,7 +302,8 @@ h5 {
 }
 
 #formContainer {
-    width: 70%;
+    width: 66%;
+    margin: 0 auto;
 }
 
 form {
@@ -296,7 +322,7 @@ label {
 
 input {
     display: table-cell;
-    /*width: 100%;*/
+    width: 400px;
     padding: 5px;
     margin: 10px;
     border: 1px solid black;
@@ -306,11 +332,22 @@ textarea {
     width: 100%;
     height: 130px;
     margin-top: 40px;
+    border: 1px solid black;
 }
 
 #infoLabel{
     vertical-align: top;
     padding-top: 40px;
+}
+
+#formSubmit {
+    border: 2px solid black;
+    margin: 20px auto;
+    padding: 10px 30px;
+    width: 100px;
+    background-color: #cccccc;
+    border-radius: 5%;
+    font-size: 1em;
 }
 
 footer {
@@ -328,5 +365,46 @@ footer li {
     list-style: none;
     margin: 5px auto;
     display: inline-block;
-    width: 100px
+    width: 100px;
+}
+
+/* -----media queries-----*/
+
+@media screen and (max-width: 1100px){
+    .skillImg {
+        padding-top: 40px;
+    }
+
+    #aboutSec {
+        height: 530px;
+    }
+}
+
+@media screen and (max-width: 850px){
+    #aboutInfo {
+        width: 80%
+    }
+
+    #aboutPic {
+        width: 80%;
+        position: relative;
+        margin: 30px auto;
+    }
+
+    #aboutSec {
+        height: auto;
+        text-align: center;
+    }
+
+    #blog {
+        width: 80%;
+    }
+
+    #blogInfo {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 725px){
+
 }

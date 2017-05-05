@@ -36,6 +36,15 @@
         </a>
     </div>
 
+    <div id="mobileNav">
+        <ul>
+            <li class="mobileNavBtn">About Me</li>
+            <li class="mobileNavBtn">Portfolio</li>
+            <li class="mobileNavBtn">Blog</li>
+            <li class="mobileNavBtn">Contact</li>
+        </ul>
+    </div>
+
     <div id="welcomeContainer">
         <h1>Welcome</h1>
         <h2>My name is Larry Gonzales.</h2>
@@ -78,17 +87,17 @@
     <div class="portfolioSlider">
         <div class="slick-slide">
             <img src="img/simon-screensht.png" alt="">
-            <h1>Simple Simon</h1>
+            <h2>Simple Simon</h2>
             <p>A simon clone using HTML, CSS, Javascript, & JQuery. </p>
         </div>
         <div class="slick-slide">
             <img src="img/weather-screensht.png" alt="">
-            <h1>Weather Application</h1>
+            <h2>Weather Application</h2>
             <p>A weather app demonstrating the integration of Google maps API and the Open Weather API.</p>
         </div>
         <div class="slick-slide">
             <img src="img/jsCalc-screensht.png" alt="">
-            <h1>Javascript Calculator</h1>
+            <h2>Javascript Calculator</h2>
             <p>A functional calculator with all functions created with vanilla Javascript.</p>
         </div>
     </div>
@@ -117,8 +126,13 @@
         <div id="contactInfo">
             <h3>Please feel free to reach out and contact me with any questions or inquiries. I would love to hear from
                 you.</h3>
+            
+            <h2>Email:</h2>
+            <h3><a href="mailto:larrygonzales727@gmail.com">larrygonzales727@gmail.com</a></h3>
+            <h2>Phone:</h2>
+            <h3></h3>
 
-            <div class="row iconCntnr">
+            <div id="iconContainer">
                 <div class="icons">
                     <a href="https://www.linkedin.com/in/larry-gonzales-dev" target="_blank">
                         <img src="img/social_linkedin_box_blue.png" alt="linked in">
@@ -174,7 +188,7 @@
 
                     <textarea id="info" name="info"></textarea>
                 </p>
-                <button type="submit" id="formSubmit" class="btn btn-primary">Submit</button>
+                <button type="submit" id="formSubmit">Submit</button>
             </form>
         </div>
 

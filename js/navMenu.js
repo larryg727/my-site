@@ -23,7 +23,6 @@ $(document).ready(function () {
     };
 
     //only runs scroll animations on screens above tis size
-    if ($(window).width() > 767) {
         $(window).scroll(function () {
             section = "#aboutSec";
             if ($("#aboutSec").inView()) {
@@ -36,7 +35,7 @@ $(document).ready(function () {
                 $("#aboutInfo").css("display", "inline-block");
             }
         });
-    }
+
 
     // scroll funtions to remove dark overlay on sections when scroll
     $(window).scroll(function () {
@@ -74,28 +73,31 @@ $(document).ready(function () {
 
     // click event to animate menu into view
     $("#logoCircle, #menuClick").click(function () {
-        $("#menuContainer").fadeIn(3000);
-        $("#menuClick").css("visibility", "hidden");
-        $("#contactBtn").animate({
-            top: "415px",
-            right: "485px"
-        }, 1000);
-        $("#aboutBtn").animate({
-            top: "483px",
-            right: "370px"
-        }, 1000);
-        $("#logoCircle").animate({
-            top: "180px"
-        }, 1000);
-        $("#portfolioBtn").animate({
-            top: "483px",
-            right: "120px"
-        }, 1000);
-        $("#blogBtn").animate({
-            top: "420px",
-            right: "10px"
-        }, 1000);
-
+        if ($(window).width() > 725) {
+            $("#menuContainer").fadeIn(3000);
+            $("#menuClick").css("visibility", "hidden");
+            $("#contactBtn").animate({
+                top: "415px",
+                right: "485px"
+            }, 1000);
+            $("#aboutBtn").animate({
+                top: "483px",
+                right: "370px"
+            }, 1000);
+            $("#logoCircle").animate({
+                top: "180px"
+            }, 1000);
+            $("#portfolioBtn").animate({
+                top: "483px",
+                right: "120px"
+            }, 1000);
+            $("#blogBtn").animate({
+                top: "420px",
+                right: "10px"
+            }, 1000);
+        }else{
+            $("#mobileNav").slideToggle(1000);
+        }
         // timeout prevents hover from interrupting initial animation
         setTimeout(function(){
             $(".menuBtn").hover(function () {
