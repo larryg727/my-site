@@ -141,15 +141,17 @@
 #aboutSec {
     width: 85%;
     max-width: 1280px;
+    height: 450px;
     margin: 0 auto;
     padding: 50px 0;
+    position: relative;
 }
 
 #aboutInfo {
     width: 45%;
-    display: inline-block;
     padding: 0 35px;
     text-align: center;
+    display: none;
 }
 
 #aboutInfo>h1 {
@@ -162,6 +164,8 @@
     width: 45%;
     display: inline-block;
     vertical-align: top;
+    margin: 0 auto;
+    position: absolute;
 }
 
 #blogBack {
@@ -204,16 +208,24 @@
 
 .portfolioSlider {
     width: 60%;
-    margin: 100px auto;
+    margin: 40px auto;
     display: inline-block;
-    color: #000;
-    font-size: 3em;
+    color: #337ab7;
+    font-size: 1.5em;
+    text-align: center;
 
 }
 
 #portBack {
     background-color: #a0a0a0;
-    padding: 50px 0;
+    padding: 5px 0;
+}
+
+#portBack>h1 {
+    font-size: 4em;
+    color: #337ab7;
+    font-family: 'Lobster', cursive;
+    text-align: center;
 }
 
 footer {
