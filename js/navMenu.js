@@ -95,9 +95,7 @@ $(document).ready(function () {
                 top: "420px",
                 right: "10px"
             }, 1000);
-        }else{
-            $("#mobileNav").slideToggle(1000);
-        }
+
         // timeout prevents hover from interrupting initial animation
         setTimeout(function(){
             $(".menuBtn").hover(function () {
@@ -106,6 +104,10 @@ $(document).ready(function () {
                 $(this).stop(true, false).animate({"font-size": "1em"});
             });
             }, 2000);
+        }else{
+            $("#mobileNav").slideToggle();
+            $("#menuClick").css("visibility", "hidden");
+        }
 
     });
 

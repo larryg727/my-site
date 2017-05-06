@@ -115,7 +115,7 @@
     background-color: #337ab7;
     width: 100%;
     margin: 0 auto;
-    height: 50px;
+    height: auto;
     text-align: center;
     display:none;
 }
@@ -128,7 +128,7 @@
     width: 100px;
     padding: 15px;
 }
-
+/*---------------------------*/
 #welcomeContainer {
     color: #337ab7;
     width: 60%;
@@ -209,7 +209,7 @@ section h1 {
 }
 
 .skillImg {
-    width: 20%;
+    width: 25%;
     display: inline-block;
     padding-top: 150px;
 }
@@ -370,7 +370,7 @@ footer li {
 
 /* -----media queries-----*/
 
-@media screen and (max-width: 1100px){
+@media screen and (max-width: 1100px) {
     .skillImg {
         padding-top: 40px;
     }
@@ -380,7 +380,7 @@ footer li {
     }
 }
 
-@media screen and (max-width: 850px){
+@media screen and (max-width: 850px) {
     #aboutInfo {
         width: 80%
     }
@@ -405,6 +405,79 @@ footer li {
     }
 }
 
-@media screen and (max-width: 725px){
+@media screen and (max-width: 725px) {
+    #logoCircle {
+
+    }
+
+    #welcomeContainer {
+        padding: 50px;
+        width: 80%;
+    }
+
+    .portfolioSlider {
+        width: 80%;
+    }
+
+    .skillImg {
+        width: 35%;
+    }
+
+    #formContainer {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 535px) {
+    .mobileNavBtn {
+        width: 80px;
+    }
+
+    #welcomeContainer {
+        width: 85%;
+        padding: 50px 0;
+    }
+
+    #aboutSec {
+        width: 100%;
+    }
+
+    #aboutInfo {
+        width: 95%;
+        padding: 5px;
+    }
+
+    #aboutPic {
+        width: 95%;
+    }
+
+    #blogSec {
+        width: 100%;
+        text-align: center;
+    }
+
+    #blog {
+        width: 95%;
+        padding: 5px;
+    }
+
+    .portfolioSlider {
+        width: 90%;
+    }
+
+    #contactSec {
+        width: 100%;
+    }
+
+    #contactInfo {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .mobileNavBtn {
+        width: 74px;
+        padding: 10px;
+    }
 
 }
