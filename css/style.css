@@ -136,20 +136,46 @@
     margin: 0 auto;
     text-align: center;
     padding: 150px;
+    position: relative;
 }
 
-#welcomeContainer > h1 {
+#welcomeContainer  h1 {
     font-size: 5em;
     font-family: 'Lobster', cursive;
 }
 
-#welcomeContainer > h2 {
+#welcomeContainer  h2 {
     font-size: 4em;
     color: #a0a0a0;
 }
 
-#welcomeContainer > h3 {
+#welcomeContainer  h3 {
     font-size: 2em;
+    color: #337ab7;
+}
+
+#welcome {
+    display: none;
+}
+
+#larry{
+    position: absolute;
+    left: 1%;
+    top: -800px;
+    display:none;
+}
+
+#larry > h2 {
+    color: #fff;
+}
+
+#myName {
+    display:none;
+}
+
+#intro {
+    padding-top: 4.3em;
+    display: none;
 }
 
 .unactiveSec {
@@ -415,6 +441,10 @@ footer li {
         width: 80%;
     }
 
+    #welcomeContainer h2 {
+        font-size: 3.5em;
+    }
+
     .portfolioSlider {
         width: 80%;
     }
@@ -484,15 +514,15 @@ footer li {
         width: 95%
     }
 
-    #welcomeContainer > h1 {
+    #welcomeContainer  h1 {
         font-size: 4em;
     }
 
-    #welcomeContainer > h2 {
+    #welcomeContainer  h2 {
         font-size: 3em;
     }
 
-    #welcomeContainer > h3 {
+    #welcomeContainer  h3 {
         font-size: 1.7em;
     }
 }
@@ -508,15 +538,15 @@ footer li {
         width: 95%
     }
 
-    #welcomeContainer > h1 {
+    #welcomeContainer  h1 {
         font-size: 3.5em;
     }
 
-    #welcomeContainer > h2 {
+    #welcomeContainer  h2 {
         font-size: 2.5em;
     }
 
-    #welcomeContainer > h3 {
+    #welcomeContainer  h3 {
         font-size: 1.2em;
     }
 }

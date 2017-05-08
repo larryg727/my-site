@@ -6,6 +6,39 @@ $(document).ready(function () {
 
     var section;
 
+    $("#welcome").fadeIn(2000);
+
+    setTimeout(function(){
+        $("#myName").slideDown(1000);
+    }, 1000);
+
+
+    setTimeout(function(){
+        $("#larry").fadeIn(200);
+        if ($(window).width() > 725) {
+        $("#larry").animate({
+            top: "320px"
+        }, 2400)}else if ($(window).width() > 460){
+            $("#larry").animate({
+                top: "220px"
+            }, 2400)
+        }else if ($(window).width() > 380) {
+            $("#larry").animate({
+                top: "190px"
+            }, 2400)
+        } else {
+            $("#larry").animate({
+                top: "175px"
+            }, 2400)
+        }
+    }, 1200);
+
+    setTimeout(function(){
+        $('#intro').slideDown(1300);
+    }, 3300);
+
+
+
     //function to check if variable object in viewport
     $.fn.inView = function () {
         //Window Object
