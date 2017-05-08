@@ -480,4 +480,43 @@ footer li {
         padding: 10px;
     }
 
+    #welcomeContainer {
+        width: 95%
+    }
+
+    #welcomeContainer > h1 {
+        font-size: 4em;
+    }
+
+    #welcomeContainer > h2 {
+        font-size: 3em;
+    }
+
+    #welcomeContainer > h3 {
+        font-size: 1.7em;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .mobileNavBtn {
+        width: 67px;
+        padding: 5px;
+        font-size: .9em;
+    }
+
+    #welcomeContainer {
+        width: 95%
+    }
+
+    #welcomeContainer > h1 {
+        font-size: 3.5em;
+    }
+
+    #welcomeContainer > h2 {
+        font-size: 2.5em;
+    }
+
+    #welcomeContainer > h3 {
+        font-size: 1.2em;
+    }
 }
