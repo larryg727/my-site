@@ -104,7 +104,7 @@ $(document).ready(function () {
     $(".portfolioSlider").slick({
         dots: true,
         autoplay:true,
-         speed: 500,
+         speed: 800,
         prevArrow: '<button type="button" class="slick-prev">Previous</button>',
         nextArrow: '<button type="button" class="slick-next">Next</button>'
     });
