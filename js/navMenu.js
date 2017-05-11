@@ -55,7 +55,7 @@ $(document).ready(function () {
         return (visibleArea >= objEndPos && scrollPosition <= objEndPos ? true : false)
     };
 
-    //only runs scroll animations on screens above tis size
+
         $(window).scroll(function () {
             section = "#aboutSec";
             if ($("#aboutSec").inView()) {
@@ -71,6 +71,15 @@ $(document).ready(function () {
 
 
     // scroll funtions to remove dark overlay on sections when scroll
+    $(window).scroll(function () {
+        section = "#skillSec";
+        if ($("#skillSec").inView()) {
+            $("#skillSec").removeClass("unactiveSec");
+            $(".skillImg").slideDown(1300);
+            $(".skillImg").css("display", "inline-block");
+        }
+    });
+
     $(window).scroll(function () {
         section = "#portBack";
         if ($("#portBack").inView()) {
