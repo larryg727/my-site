@@ -523,6 +523,10 @@ footer li {
     #welcomeContainer  h3 {
         font-size: 1.7em;
     }
+
+    #intro {
+        padding-top: 6.8em;
+    }
 }
 
 @media screen and (max-width: 380px) {
@@ -546,5 +550,9 @@ footer li {
 
     #welcomeContainer  h3 {
         font-size: 1.2em;
+    }
+
+    #intro {
+        padding-top: 6.3em;
     }
 }

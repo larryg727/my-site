@@ -16,15 +16,15 @@ $(document).ready(function () {
             top: "240px"
         }, 2400)}else if ($(window).width() > 460){
             $("#nameSay").animate({
-                top: "220px"
+                top: "140px"
             }, 2400)
         }else if ($(window).width() > 380) {
             $("#nameSay").animate({
-                top: "190px"
+                top: "120px"
             }, 2400)
         } else {
             $("#nameSay").animate({
-                top: "175px"
+                top: "115px"
             }, 2400)
         }
 
