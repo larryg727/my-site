@@ -8,34 +8,30 @@ $(document).ready(function () {
 
     $("#welcome").fadeIn(2000);
 
-    setTimeout(function(){
-        $("#myName").slideDown(1000);
-    }, 1000);
 
 
-    setTimeout(function(){
-        $("#larry").fadeIn(200);
+        $("#nameSay").fadeIn(200);
         if ($(window).width() > 725) {
-        $("#larry").animate({
-            top: "320px"
+        $("#nameSay").animate({
+            top: "240px"
         }, 2400)}else if ($(window).width() > 460){
-            $("#larry").animate({
+            $("#nameSay").animate({
                 top: "220px"
             }, 2400)
         }else if ($(window).width() > 380) {
-            $("#larry").animate({
+            $("#nameSay").animate({
                 top: "190px"
             }, 2400)
         } else {
-            $("#larry").animate({
+            $("#nameSay").animate({
                 top: "175px"
             }, 2400)
         }
-    }, 1200);
+
 
     setTimeout(function(){
         $('#intro').slideDown(1300);
-    }, 3300);
+    }, 1450);
 
 
 

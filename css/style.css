@@ -43,7 +43,7 @@
     position: absolute;
     left: 50%;
     margin-left: -60px;
-    z-index: 1;
+    z-index: 3;
 }
 
 #menuClick{
@@ -64,6 +64,7 @@
     left: 50%;
     margin-left: -350px;
     display: none;
+    z-index: 2;
 }
 
 .menuBtn {
@@ -158,23 +159,20 @@
     display: none;
 }
 
-#larry{
+#nameSay{
     position: absolute;
     left: 1%;
-    top: -800px;
+    top: -500px;
     display:none;
 }
 
-#larry > h2 {
+h2#larry{
     color: #fff;
 }
 
-#myName {
-    display:none;
-}
 
 #intro {
-    padding-top: 4.3em;
+    padding-top: 8.8em;
     display: none;
 }
 
