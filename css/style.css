@@ -26,6 +26,55 @@
     position: relative;
 }
 
+#headerContactIcons {
+    width: 60px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hdrIcons > a{
+    width: 50px;
+    height: 50px;
+
+}
+
+.hdrIcons {
+    width: 50px;
+    margin: 0 auto;
+    display:inline-block;
+    z-index: 6;
+}
+
+#icon1 {
+    position:absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#icon2 {
+    position:absolute;
+    top: 80px;
+    right: 10px;
+}
+
+#icon3 {
+    position:absolute;
+    top: 150px;
+    right: 10px;
+}
+
+#icon4 {
+    position:absolute;
+    top: 220px;
+    right: 10px;
+}
+
+#icon5 {
+    position:absolute;
+    top: 290px;
+    right: 10px;
+}
+
 #logoCircle {
     width:100px;
     height: 100px;

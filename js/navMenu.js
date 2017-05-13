@@ -114,6 +114,30 @@ $(document).ready(function () {
         if ($(window).width() > 725) {
             $("#menuContainer").fadeIn(3000);
             $("#menuClick").css("visibility", "hidden");
+            $("#icon1").animate({
+                right: "50%",
+                "margin-right": "115px"
+            }, 1000);
+            $("#icon2").animate({
+                right: "50%",
+                top: "10px",
+                "margin-right": "45px"
+            }, 1100);
+            $("#icon3").animate({
+                right: "50%",
+                top: "10px",
+                "margin-right": "-25px"
+            }, 1200);
+            $("#icon4").animate({
+                right: "50%",
+                top: "10px",
+                "margin-right": "-95px"
+            }, 1300);
+            $("#icon5").animate({
+                right: "50%",
+                top: "10px",
+                "margin-right": "-165px"
+            }, 1400);
             $("#contactBtn").animate({
                 top: "415px",
                 right: "485px"
@@ -133,7 +157,7 @@ $(document).ready(function () {
                 top: "420px",
                 right: "10px"
             }, 1000);
-
+            $("#headerContactIcons").css("display", "block");
         // timeout prevents hover from interrupting initial animation
         setTimeout(function(){
             $(".menuBtn").hover(function () {
