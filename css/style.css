@@ -272,10 +272,9 @@ section h1 {
 }
 
 .portfolioSlider {
-    width: 60%;
-    max-width: 1080px;
+    width: 100%;
+    max-width: 1480px;
     margin: 40px auto;
-    display: inline-block;
     color: #337ab7;
     font-size: 1.5em;
     text-align: center;
@@ -439,16 +438,16 @@ footer li {
         font-size: 3.5em;
     }
 
-    .portfolioSlider {
-        width: 80%;
-    }
-
     .skillImg {
         width: 35%;
     }
 
     #formContainer {
         display: none;
+    }
+
+    .portfolioSlider {
+        font-size: 1.2em;
     }
 }
 
@@ -489,16 +488,16 @@ footer li {
         padding: 5px;
     }
 
-    .portfolioSlider {
-        width: 90%;
-    }
-
     #contactSec {
         width: 100%;
     }
 
     #contactInfo {
         width: 95%;
+    }
+
+    .portfolioSlider {
+        font-size: 1em;
     }
 }
 

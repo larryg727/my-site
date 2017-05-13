@@ -100,14 +100,14 @@ $(document).ready(function () {
         }
     });
 
-    // initialize slider
-    $(".portfolioSlider").slick({
-        dots: true,
-        autoplay:true,
-         speed: 800,
-        prevArrow: '<button type="button" class="slick-prev">Previous</button>',
-        nextArrow: '<button type="button" class="slick-next">Next</button>'
-    });
+    // // initialize slider
+    // $(".portfolioSlider").slick({
+    //     dots: true,
+    //     autoplay:true,
+    //      speed: 800,
+    //     prevArrow: '<button type="button" class="slick-prev">Previous</button>',
+    //     nextArrow: '<button type="button" class="slick-next">Next</button>'
+    // });
 
     // click event to animate menu into view
     $("#logoCircle, #menuClick").click(function () {

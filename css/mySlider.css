@@ -1,0 +1,91 @@
+#sliderContainer { /*entire slider container*/
+    position: relative;
+}
+
+#picContainer {
+    width: 60%;    /*sets the max size of pics*/
+    margin: 0 auto;
+}
+
+.slides {
+    width: 100%;
+}
+
+#navLeft {
+    font-size: 70px;
+    color: #337ab7;
+}
+
+#prev {
+    position: absolute;
+    top: 35%;
+    left: 15%;
+    width: auto;
+}
+
+#next {
+    position: absolute;
+    top: 35%;
+    right: 15%;
+    width: auto;
+}
+
+#navRight {
+    font-size: 70px;
+    color: #337ab7;
+}
+
+.picInfoContainer {
+    position: relative;
+    display: none;
+}
+
+.slideInfo {
+    text-align: center;
+    color: #337ab7;
+}
+
+
+/*--------media break for slider-------*/
+@media screen and (max-width: 950px) {
+    #picContainer{
+        width: 75%;
+    }
+
+    #prev {
+        left: 5%;
+    }
+
+    #next {
+        right: 5%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    #prev {
+        left: 2%;
+        top: 30%
+    }
+
+    #next {
+        right: 2%;
+        top: 30%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #prev {
+        left: 0;
+    }
+
+    #next {
+        right: 0;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #navLeft, #navRight {
+        font-size: 40px;
+    }
+
+}
