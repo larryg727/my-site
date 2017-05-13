@@ -307,6 +307,14 @@ section h1 {
     text-align: center;
 }
 
+#contactInfo h2{
+    margin: 20px auto;
+}
+
+#contactInfo a {
+    text-decoration: none;
+}
+
 #iconContainer {
     width: 100%;
     margin: 40px auto;
@@ -328,6 +336,7 @@ h5 {
 #formContainer {
     width: 66%;
     margin: 0 auto;
+    display: none;  /*removed for now*/
 }
 
 form {
