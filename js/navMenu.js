@@ -5,6 +5,7 @@
 $(document).ready(function () {
 
     var section;
+    var mobileTop;
 
     $("#welcome").fadeIn(2000);
 
@@ -109,6 +110,38 @@ $(document).ready(function () {
     //     nextArrow: '<button type="button" class="slick-next">Next</button>'
     // });
 
+    // function for mobile nav menu animations
+    function mobileNavAni(){
+        $("#mobileNav").slideDown();
+        $("#menuClick").css("visibility", "hidden");
+        $("#icon1").animate({
+            right: "50%",
+            "margin-right": "115px",
+            top: mobileTop
+        }, 1000);
+        $("#icon2").animate({
+            right: "50%",
+            top: mobileTop,
+            "margin-right": "45px"
+        }, 1100);
+        $("#icon3").animate({
+            right: "50%",
+            top: mobileTop,
+            "margin-right": "-25px"
+        }, 1150);
+        $("#icon4").animate({
+            right: "50%",
+            top: mobileTop,
+            "margin-right": "-95px"
+        }, 1250);
+        $("#icon5").animate({
+            right: "50%",
+            top: mobileTop,
+            "margin-right": "-165px"
+        }, 1350);
+    }
+
+
     // click event to animate menu into view
     $("#logoCircle, #menuClick").click(function () {
         if ($(window).width() > 725) {
@@ -166,9 +199,15 @@ $(document).ready(function () {
                 $(this).stop(true, false).animate({"font-size": "1em"});
             });
             }, 2000);
+        }else if($(window).width() > 460){
+            mobileTop = "220px";
+            mobileNavAni();
+        }else if($(window).width() > 380){
+            mobileTop = "210px";
+            mobileNavAni();
         }else{
-            $("#mobileNav").slideToggle();
-            $("#menuClick").css("visibility", "hidden");
+            mobileTop = "200px";
+            mobileNavAni();
         }
 
     });

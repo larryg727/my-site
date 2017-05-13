@@ -584,6 +584,39 @@ footer li {
     #intro {
         padding-top: 6.8em;
     }
+
+    .hdrIcons {
+        width: 35px;
+        margin: 0 auto;
+        display:inline-block;
+        z-index: 6;
+    }
+
+    #icon2 {
+        position:absolute;
+        top: 65px;
+        right: 10px;
+    }
+
+    #icon3 {
+        position:absolute;
+        top: 120px;
+        right: 10px;
+    }
+
+    #icon4 {
+        position:absolute;
+        top: 175px;
+        right: 10px;
+    }
+
+    #icon5 {
+        position:absolute;
+        top: 230px;
+        right: 10px;
+    }
+
+
 }
 
 @media screen and (max-width: 380px) {
