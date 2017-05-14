@@ -270,10 +270,11 @@ section h1 {
 
 #aboutPic {
     width: 45%;
-    display: inline-block;
-    vertical-align: top;
-    margin: 0 auto;
     position: absolute;
+    display: inline-block;
+    top: 60px;
+    left: 0;
+    z-index: 1;
 }
 #skillSec {
     width: 100%;

@@ -58,12 +58,11 @@ $(document).ready(function () {
             if ($("#aboutSec").inView()) {
                 $("#aboutSec").parent().removeClass("unactiveSec");
                 $("#aboutPic").animate({
-                    right: "0"
+                    left: "55%"
                 }, 1000);
                 $("#aboutInfo").slideDown(1500);
-                $("#skillSec").slideDown(1500);
                 $("#aboutInfo").css("display", "inline-block");
-            }
+                }
         });
 
 
