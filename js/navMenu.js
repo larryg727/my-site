@@ -57,9 +57,10 @@ $(document).ready(function () {
             section = "#aboutSec";
             if ($("#aboutSec").inView()) {
                 $("#aboutSec").parent().removeClass("unactiveSec");
+                if($(window).width() > 850){
                 $("#aboutPic").animate({
                     left: "55%"
-                }, 1000);
+                }, 1000);}
                 $("#aboutInfo").slideDown(1500);
                 $("#aboutInfo").css("display", "inline-block");
                 }

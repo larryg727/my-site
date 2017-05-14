@@ -225,6 +225,15 @@ h2#larry{
     display: none;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#intro a:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+}
+
 .unactiveSec {
     position: relative;
 }
