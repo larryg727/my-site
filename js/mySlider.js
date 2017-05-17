@@ -5,6 +5,8 @@
 $(document).ready(function () {
     "use strict";
 
+    /*-----------variable declarations---------------*/
+
     var initial = 1; //sets initial frame being shown
     var slideVar = "#slide-"; //variable for slides
     var current = initial; // tracks  current slide
@@ -13,13 +15,13 @@ $(document).ready(function () {
     var playing;
 
 
+    // initial picture shown
+    $(slideVar + initial).fadeIn();
 
-    $(slideVar + initial).fadeIn();   // initial picture shown
-
-    // will play slides if play is true
+    // will auto play slides if play is true
     if(play) {
         autoPlay();
-        //will pause autoplay on hover and restart on enter
+        //will pause autoplay on hover and restart on mouse exit
         $("#slide-1, #slide-2, #slide-3, #slide-4").hover(function () {
             stop();
         }, function () {
@@ -28,16 +30,6 @@ $(document).ready(function () {
         });
     }
 
-    // currently not used  tracking current with counters keep case of future need
-    function currentSlide(){
-        for(var i = 1; i <= 4; i++) {
-            var display = $(slideVar + i).css("display");
-            if (display === "inline") {
-                current = i;
-            }
-        }
-            return current;
-    }
 
     // function for next button click
     $("#next").click(function(){
@@ -52,6 +44,7 @@ $(document).ready(function () {
         }
     });
 
+    // function for prev button click
     $("#prev").click(function(){
         if(current > 1){
             $(slideVar + current).hide();
@@ -79,7 +72,7 @@ $(document).ready(function () {
             }, speed);
     }
 
-        // to stop auto play
+        // function to stop auto play
     function stop(){
         clearInterval(playing);
     }
