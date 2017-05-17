@@ -197,7 +197,7 @@ $(document).ready(function () {
         } else if ($(window).width() > 460) {
             mobileTop = "220px";
             mobileNavAni();
-        } else if ($(window).width() > 380) {
+        } else if ($(window).width() > 390) {
             mobileTop = "210px";
             mobileNavAni();
         } else {
