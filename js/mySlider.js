@@ -22,7 +22,7 @@ $(document).ready(function () {
     if(play) {
         autoPlay();
         //will pause autoplay on hover and restart on mouse exit
-        $("#slide-1, #slide-2, #slide-3, #slide-4").hover(function () {
+        $("#slide-1, #slide-2, #slide-3, #slide-4, #slide-5").hover(function () {
             stop();
         }, function () {
             play = true;
@@ -33,11 +33,11 @@ $(document).ready(function () {
 
     // function for next button click
     $("#next").click(function(){
-        if(current < 4){
+        if(current < 5){
             $(slideVar + current).hide();
             $(slideVar + (current+1)).fadeIn();
             current += 1;
-        }else if(current = 4){
+        }else if(current = 5){
             $(slideVar + current).hide();
             $("#slide-1").fadeIn();
             current = 1;
@@ -52,19 +52,19 @@ $(document).ready(function () {
             current -= 1;
         }else if(current = 1){
             $(slideVar + current).hide();
-            $("#slide-4").fadeIn();
-            current = 4;
+            $("#slide-5").fadeIn();
+            current = 5;
         }
     });
 
     // function to play slides automatically
     function autoPlay(){
          playing = setInterval(function(){
-                if(current < 4){
+                if(current < 5){
                     $(slideVar + current).hide();
                     $(slideVar + (current+1)).fadeIn();
                     current += 1;
-                }else if(current = 4){
+                }else if(current = 5){
                     $(slideVar + current).hide();
                     $("#slide-1").fadeIn();
                     current = 1;
