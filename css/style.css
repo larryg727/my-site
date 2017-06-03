@@ -277,6 +277,19 @@ a {
     display: none;
 }
 
+#aboutInfo p {
+    line-height: 140%;
+}
+
+#resumebtn {
+    padding: 15px;
+    background-color: #337ab7;
+    color: white;
+    width: 100px;
+    margin: 40px auto 0 auto;
+    border-radius: 5px;
+}
+
 section h1 {
     font-size: 4em;
     color: #337ab7;
