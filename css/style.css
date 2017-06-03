@@ -336,6 +336,32 @@ section h1 {
     text-align: center;
 }
 
+#blog h2 {
+    display: inline-block;
+    width: 45%;
+    text-align: left;
+    margin: 15px auto;
+}
+
+#blog h3 {
+    display: inline-block;
+    text-align: right;
+    width: 45%;
+    margin: 15px auto;
+}
+
+#blog p {
+    margin: 15px auto;
+}
+
+#hidden {
+    display: none;
+}
+
+#blogMore {
+    color: #337ab7;
+}
+
 #blogInfo {
     width: 15%;
     display: inline-block;

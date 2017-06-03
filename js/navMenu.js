@@ -207,6 +207,11 @@ $(document).ready(function () {
 
     });
 
+    $('#blogMore').click(function (){
+        $(this).hide();
+        $('#hidden').slideDown();
+    });
+
     welcomeAnimation();
     aboutSection();
     // skillSection();
