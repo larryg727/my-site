@@ -419,6 +419,11 @@ tags {
     padding-top: 50px;
 }
 
+#mePic {
+    width: 350px;
+    margin: 0 auto;
+}
+
 #contactInfo {
     width: 65%;
     vertical-align: top;
@@ -686,6 +691,9 @@ footer li {
         right: 10px;
     }
 
+    #mePic {
+        width: 80%;
+    }
 
 }
 
