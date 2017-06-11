@@ -312,6 +312,12 @@ section h1 {
     background-color: #dddddd;
 }
 
+#skillContainer {
+    width: 100%;
+    max-width: 1480px;
+    margin: 0 auto;
+}
+
 .skillImg {
     width: 20%;
     display: inline-block;
@@ -324,7 +330,7 @@ section h1 {
 
 #blogSec {
     width: 85%;
-    max-width: 1280px;
+    max-width: 1480px;
     margin: 0 auto;
     padding: 50px 0;
 }
@@ -397,6 +403,25 @@ section h1 {
     background-size: cover;
     margin: 0;
 
+}
+
+#portContainer{
+    width: 90%;
+    max-width: 1480px;
+    margin: 0 auto;
+}
+
+.project {
+    width: 46%;
+    display: inline-block;
+    text-align: center;
+    color: #337ab7;
+    font-size: 1.5em;
+    margin: 40px 1.75% 60px 1.75%;
+}
+
+.slides {
+    margin: 15px 0 0 0;
 }
 
 tags {
@@ -555,6 +580,13 @@ footer li {
     .skillImg {
         width: 28%
     }
+
+    .project {
+        width: 90%;
+        margin: 50px 4.75%;
+
+    }
+
 }
 
 @media screen and (max-width: 725px) {
@@ -582,6 +614,7 @@ footer li {
     .portfolioSlider {
         font-size: 1.2em;
     }
+
 }
 
 @media screen and (max-width: 535px) {
@@ -723,4 +756,11 @@ footer li {
     #intro {
         padding-top: 6.3em;
     }
+
+    .project {
+        width: 100%;
+        margin: 50px 0;
+
+    }
+
 }

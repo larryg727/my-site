@@ -9,7 +9,6 @@ $(document).ready(function () {
     var section; // variable for to specify section for scroll functions
     var mobileTop; // variable to adjust the mobile nav animations for different screen sizes
 
-
     /*---------------functions----------------------------*/
 
     //function at screen load for welcome section animations
@@ -41,7 +40,7 @@ $(document).ready(function () {
 
 
     //function to check if variable object in viewport
-    $.fn.inView = function () {
+    $.fn.inView = function (adjustment) {
         //Window Object
         var win = $(window);
         //Object to Check
@@ -52,7 +51,7 @@ $(document).ready(function () {
         //the end of the visible area in the page, starting from the scroll position
         var visibleArea = win.scrollTop() + win.height();
         //the end of the object to check
-        var objEndPos = (obj.offset().top + obj.outerHeight()) * .95;
+        var objEndPos = (obj.offset().top + obj.outerHeight()) * adjustment;
         return (visibleArea >= objEndPos && scrollPosition <= objEndPos ? true : false)
     };
 
@@ -60,7 +59,7 @@ $(document).ready(function () {
     function aboutSection() {
         $(window).scroll(function () {
             section = "#aboutSec";
-            if ($("#aboutSec").inView()) {
+            if ($("#aboutSec").inView(.95)) {
                 $("#aboutSec").parent().removeClass("unactiveSec");
                 if ($(window).width() > 850) {
                     $("#aboutPic").animate({
@@ -74,23 +73,12 @@ $(document).ready(function () {
     }
 
 
-    //function to remove overlay and intialize animation on scroll section
-    // function skillSection() {
-    //     $(window).scroll(function () {
-    //         section = "#skillSec";
-    //         if ($("#skillSec").inView()) {
-    //             $("#skillSec").removeClass("unactiveSec");
-    //             $(".skillImg").slideDown(1300);
-    //             $(".skillImg").css("display", "inline-block");
-    //         }
-    //     });
-    // }
 
     // scroll functions to remove dark overlay on sections when scroll
-    function makeActive(sectionId) {
+    function makeActive(sectionId, adjustment) {
         $(window).scroll(function () {
             section = sectionId;
-            if ($(sectionId).inView()) {
+            if ($(sectionId).inView(adjustment)) {
                 $(sectionId).removeClass("unactiveSec");
 
             }
@@ -215,9 +203,9 @@ $(document).ready(function () {
     welcomeAnimation();
     aboutSection();
     // skillSection();
-    makeActive("#skillSec");
-    makeActive("#portBack");
-    makeActive("#blogBack");
-    makeActive("#contactBack");
+    makeActive("#skillSec", .9);
+    makeActive("#portBack", .65);
+    makeActive("#blogBack", 1);
+    makeActive("#contactBack", .95);
 
 });
