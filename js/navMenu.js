@@ -212,7 +212,7 @@ $(document).ready(function () {
     welcomeAnimation();
     aboutSection();
     makeActive("#skillSec", .85);
-    makeActive("#blogBack", 1);
-    makeActive("#contactBack", .5);
+    // makeActive("#blogBack", 1);
+    makeActive("#contactBack", .90);
 
 });
