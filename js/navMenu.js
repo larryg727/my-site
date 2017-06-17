@@ -204,7 +204,7 @@ $(document).ready(function () {
 // to compensate for changes to section height change after media query
 // changes from two columns to single column
     if ($(window).width() > 850){
-        makeActive("#portBack", .65);
+        makeActive("#portBack", .57);
     }else{
         makeActive("#portBack", .5);
     }
@@ -213,6 +213,6 @@ $(document).ready(function () {
     aboutSection();
     makeActive("#skillSec", .85);
     makeActive("#blogBack", 1);
-    makeActive("#contactBack", .95);
+    makeActive("#contactBack", .5);
 
 });
