@@ -19,7 +19,7 @@
                     rgba(0, 0, 0, 0.8)
             ),
             url("../img/code.jpg") no-repeat top center fixed;
-    background-size: cover;
+    background-size: 100%;
     width: 100%;
     margin: 0;
     padding: 0;
