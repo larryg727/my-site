@@ -406,7 +406,7 @@ section h1 {
                     rgba(0, 0, 0, 0.8),
                     rgba(0, 0, 0, 0.8)
             ),
-            url("../img/close-code.jpg") no-repeat top center fixed;
+            url("../img/close-codedesk.jpg") no-repeat top center fixed;
     background-size: cover;
     margin: 0;
 
@@ -632,6 +632,14 @@ footer li {
                 rgba(0, 0, 0, 0.8)
         ),
         url("../img/codemobile.jpg") no-repeat top center fixed;
+    }
+
+    #portBack {
+        background: linear-gradient(
+                rgba(0, 0, 0, 0.8),
+                rgba(0, 0, 0, 0.8)
+        ),
+        url("../img/close-codemobile.jpg") no-repeat top center fixed;
     }
 
     .mobileNavBtn {
