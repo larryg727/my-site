@@ -409,7 +409,7 @@ section h1 {
             url("../img/close-codedesk.jpg") no-repeat top center fixed;
     background-size: cover;
     margin: 0;
-
+    width: 100%;
 }
 
 #portContainer{
