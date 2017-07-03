@@ -625,6 +625,15 @@ footer li {
 }
 
 @media screen and (max-width: 535px) {
+
+    #headerContainer {
+        background: linear-gradient(
+                rgba(0, 0, 0, 0.8),
+                rgba(0, 0, 0, 0.8)
+        ),
+        url("../img/codemobile.jpg") no-repeat top center fixed;
+    }
+
     .mobileNavBtn {
         width: 80px;
     }
