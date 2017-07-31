@@ -13,10 +13,15 @@ $(document).ready(function () {
     var speed = 3800;  // sets speed for auto play of slides
     var play = true;  // true will auto play false will not
     var playing;
+    var lastSlide = 4; // total number of slides
 
+    // initially hides all slides except for first slide
+    for(var i = 2; i <= lastSlide; i++){
+        $(slideVar + i).hide();
+    }
 
-    // initial picture shown
-    $(slideVar + initial).fadeIn();
+    // // initial picture shown
+    // $(slideVar + initial).fadeIn();
 
     // will auto play slides if play is true
     if(play) {
@@ -33,11 +38,11 @@ $(document).ready(function () {
 
     // function for next button click
     $("#next").click(function(){
-        if(current < 6){
+        if(current < lastSlide){
             $(slideVar + current).hide();
             $(slideVar + (current+1)).fadeIn();
             current += 1;
-        }else if(current = 6){
+        }else if(current = lastSlide){
             $(slideVar + current).hide();
             $("#slide-1").fadeIn();
             current = 1;
@@ -52,19 +57,19 @@ $(document).ready(function () {
             current -= 1;
         }else if(current = 1){
             $(slideVar + current).hide();
-            $("#slide-6").fadeIn();
-            current = 6;
+            $("#slide-" + lastSlide).fadeIn();
+            current = lastSlide;
         }
     });
 
     // function to play slides automatically
     function autoPlay(){
          playing = setInterval(function(){
-                if(current < 6){
+                if(current < lastSlide){
                     $(slideVar + current).hide();
                     $(slideVar + (current+1)).fadeIn();
                     current += 1;
-                }else if(current = 6){
+                }else if(current = lastSlide){
                     $(slideVar + current).hide();
                     $("#slide-1").fadeIn();
                     current = 1;

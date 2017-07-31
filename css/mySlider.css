@@ -19,14 +19,14 @@
 #prev {
     position: absolute;
     top: 35%;
-    left: 15%;
+    left: -3%;
     width: auto;
 }
 
 #next {
     position: absolute;
     top: 35%;
-    right: 15%;
+    right: -3%;
     width: auto;
 }
 
@@ -46,42 +46,42 @@
 }
 
 
-/*--------media break for slider-------*/
-@media screen and (max-width: 950px) {
-    #picContainer{
-        width: 75%;
-    }
+/*!*--------media break for slider-------*!*/
+/*@media screen and (max-width: 950px) {*/
+    /*#picContainer{*/
+        /*width: 75%;*/
+    /*}*/
 
-    #prev {
-        left: 5%;
-    }
+    /*#prev {*/
+        /*left: 5%;*/
+    /*}*/
 
-    #next {
-        right: 5%;
-    }
-}
+    /*#next {*/
+        /*right: 5%;*/
+    /*}*/
+/*}*/
 
-@media screen and (max-width: 640px) {
-    #prev {
-        left: 2%;
-        top: 30%
-    }
+/*@media screen and (max-width: 640px) {*/
+    /*#prev {*/
+        /*left: 2%;*/
+        /*top: 30%*/
+    /*}*/
 
-    #next {
-        right: 2%;
-        top: 30%;
-    }
-}
+    /*#next {*/
+        /*right: 2%;*/
+        /*top: 30%;*/
+    /*}*/
+/*}*/
 
-@media screen and (max-width: 500px) {
-    #prev {
-        left: 0;
-    }
+/*@media screen and (max-width: 500px) {*/
+    /*#prev {*/
+        /*left: 0;*/
+    /*}*/
 
-    #next {
-        right: 0;
-    }
-}
+    /*#next {*/
+        /*right: 0;*/
+    /*}*/
+/*}*/
 
 @media screen and (max-width: 450px) {
     #navLeft, #navRight {
