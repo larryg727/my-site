@@ -203,11 +203,12 @@ $(document).ready(function () {
 // if statement changes amount of adjustment for scroll function
 // to compensate for changes to section height change after media query
 // changes from two columns to single column
-    if ($(window).width() > 850){
-        makeActive("#portBack", .57);
-    }else{
-        makeActive("#portBack", .5);
-    }
+// REMOVED SCROLL FUNCTION AND DARK OVERLAY FOR PORTFOLIO SECTION
+    // if ($(window).width() > 850){
+    //     makeActive("#portBack", .57);
+    // }else{
+    //     makeActive("#portBack", .5);
+    // }
 
     welcomeAnimation();
     aboutSection();

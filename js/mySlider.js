@@ -11,7 +11,7 @@ $(document).ready(function () {
     var slideVar = "#slide-"; //variable for slides
     var current = initial; // tracks  current slide
     var speed = 3800;  // sets speed for auto play of slides
-    var play = true;  // true will auto play false will not
+    var play = false;  // true will auto play false will not
     var playing;
     var lastSlide = 4; // total number of slides
 
