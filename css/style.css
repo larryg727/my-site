@@ -287,6 +287,7 @@ a {
 
 #aboutInfo p {
     line-height: 140%;
+    margin: 20px auto;
 }
 
 #resumebtn {
